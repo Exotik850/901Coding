@@ -1,0 +1,3 @@
+[Sat Jan 02 09:17:25.470145 2021] [php7:error] [pid 74279] [client 140.82.115.145:15751] PHP Parse error:  syntax error, unexpected 'var' (T_VAR) in /var/www/html/901Coding/pull.php on line 6
+[Sat Jan 02 09:18:01.638699 2021] [php7:error] [pid 74278] [client 140.82.115.144:16881] PHP Parse error:  syntax error, unexpected 'var' (T_VAR) in /var/www/html/901Coding/pull.php on line 6
+[Sat Jan 02 11:44:15.847195 2021] [php7:error] [pid 74281] [client 45.155.205.108:56844] script '/var/www/html/901Coding/index.php' not found or unable to stat
