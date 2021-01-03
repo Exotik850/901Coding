@@ -25,7 +25,9 @@
 						<!-- </div> -->
 						<div class="content">
 							<div class="inner">
-								<h1 id="slowed"></h1>
+								<div class="typewriter">
+								<h1>We teach code.</h1>
+							</div>
 								<p>Brought to you by students, for students.</p>
 							</div>
 						</div>
@@ -364,26 +366,13 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 							var s = blinks[i];
 							s.style.visibility = (s.style.visibility === 'visible') ? 'hidden' : 'visible';
 					 }
-					 window.setTimeout(JavaBlink, 1000);
+					 window.setTimeout(JavaBlink, 500);
 				}
 				if (document.addEventListener) document.addEventListener("DOMContentLoaded", JavaBlink, false);
 				else if (window.addEventListener) window.addEventListener("load", JavaBlink, false);
 				else if (window.attachEvent) window.attachEvent("onload", JavaBlink);
 				else window.onload = JavaBlink;
 			</SCRIPT>
-			<script type="text/javascript">
-				var i = 0;
-				var txt = "We teach code.";
-				var speed = 50;
-
-				function typeWriter() {
-					if (i < txt.length){
-						document.getElementById("slowed").innerHTML += txt.charAt(i);
-						i++;
-						window.setTimeout(typeWriter, speed)
-					}
-				}
-			</script>
 
 	</body>
 </html>
