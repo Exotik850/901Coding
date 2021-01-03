@@ -10,7 +10,7 @@ def git_pull():
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 HOST = socket.gethostbyname()
 PORT = 9999
-socket.bind((HOST, PORT))
+sock.bind((HOST, PORT))
 
 sock.listen()
 conn, addr = sock.accept()
