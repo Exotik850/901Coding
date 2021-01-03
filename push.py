@@ -6,7 +6,7 @@ HOST = "104.200.18.207"
 PORT = 9090
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-  # s.connect((HOST, PORT))
+  s.connect((HOST, PORT))
   def git_push():
     try:
       cmd.run(["git", "add", "."])
@@ -18,7 +18,7 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
       # # repo.git.push()
       # origin = repo.remote(name='origin')
       # origin.push()
-      # s.send(b"PUSHED")
+      s.send(b"PUSHED")
     except:
         print('Some error occured while pushing the code')
     
