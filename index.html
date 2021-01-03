@@ -374,10 +374,10 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script type="text/javascript">
 				var i = 0;
 				var txt = "We teach code.";
-				var speed = 100;
+				var speed = 150;
 
 				function typeWriter() {
-					window.setTimeout(typeWriter, 750)
+					window.setTimeout(typeWriter, 1000)
 					if (i < txt.length){
 						document.getElementById("slowed").innerHTML += txt.charAt(i);
 						i++;
