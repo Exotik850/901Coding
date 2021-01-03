@@ -1,16 +1,14 @@
 import socket
-import git
+import subprocess as cmd
 
 def git_pull():
   try:
-    repo = Repo("/var/www/html/901Coding/.git")
-    origin = repo.remote(name='origin')
-    origin.pull()
+    cmd.run(["git", "pull"])
   except:
       print('Some error occured while pulling the code')
 
 socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-HOST = "127.0.0.1"
+HOST = "localhost"
 PORT = 9090
 socket.bind((HOST, PORT))
 
