@@ -20,7 +20,8 @@
 				<!-- Header -->
 					<header id="header">
 						<!-- <div class="logo"> -->
-							<img src="images/logo.gif" alt="901Coding logo" width="420" height="340" align=center></img>
+							<!-- <img src="images/logo.gif" alt="901Coding logo" width="420" height="340" align=center></img> -->
+							<h1></901Coding> <JavaBlink>&#8248;</JavaBlink></h1>
 						<!-- </div> -->
 						<div class="content">
 							<div class="inner">
@@ -356,6 +357,20 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<SCRIPT type="text/javascript">
+				function JavaBlink() {
+					 var blinks = document.getElementsByTagName('JavaBlink');
+					 for (var i = blinks.length - 1; i >= 0; i--) {
+							var s = blinks[i];
+							s.style.visibility = (s.style.visibility === 'visible') ? 'hidden' : 'visible';
+					 }
+					 window.setTimeout(JavaBlink, 1000);
+				}
+				if (document.addEventListener) document.addEventListener("DOMContentLoaded", JavaBlink, false);
+				else if (window.addEventListener) window.addEventListener("load", JavaBlink, false);
+				else if (window.attachEvent) window.attachEvent("onload", JavaBlink);
+				else window.onload = JavaBlink;
+			</SCRIPT>
 
 	</body>
 </html>
