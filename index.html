@@ -25,7 +25,7 @@
 						<!-- </div> -->
 						<div class="content">
 							<div class="inner">
-								<h1>We teach code.</h1>
+								<h1 id="slowed"></h1>
 								<p>Brought to you by students, for students.</p>
 							</div>
 						</div>
@@ -371,6 +371,19 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				else if (window.attachEvent) window.attachEvent("onload", JavaBlink);
 				else window.onload = JavaBlink;
 			</SCRIPT>
+			<script type="text/javascript">
+				var i = 0;
+				var txt = "We teach code.";
+				var speed = 50;
+
+				function typeWriter() {
+					if (i < txt.length){
+						document.getElementById("slowed").innerHTML += txt.charAt(i);
+						i++;
+						setTimeout(typeWriter, speed)
+					}
+				}
+			</script>
 
 	</body>
 </html>
