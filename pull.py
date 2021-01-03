@@ -7,13 +7,13 @@ def git_pull():
   except:
       print('Some error occured while pulling the code')
 
-socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-HOST = "localhost"
-PORT = 9090
+sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+HOST = socket.gethostbyname()
+PORT = 9999
 socket.bind((HOST, PORT))
 
-socket.listen()
-conn, addr = socket.accept()
+sock.listen()
+conn, addr = sock.accept()
 with conn:
   while True:
     data = conn.recv(1024)
