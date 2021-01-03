@@ -361,7 +361,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				function JavaBlink() {
 					 var blinks = document.getElementsByTagName('JavaBlink');
 					 for (var i = blinks.length - 1; i >= 0; i--) {
-							var s = blinks[i];
+							var s = blinks[i]; 
 							s.style.visibility = (s.style.visibility === 'visible') ? 'hidden' : 'visible';
 					 }
 					 window.setTimeout(JavaBlink, 500);
@@ -374,9 +374,10 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script type="text/javascript">
 				var i = 0;
 				var txt = "We teach code.";
-				var speed = 50;
+				var speed = 100;
 
 				function typeWriter() {
+					window.setTimeout(typeWriter, 750)
 					if (i < txt.length){
 						document.getElementById("slowed").innerHTML += txt.charAt(i);
 						i++;
