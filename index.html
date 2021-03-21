@@ -32,6 +32,20 @@
     width: 50%;
     vertical-align: middle;
   }
+
+  .secondhead {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+  }
+
+  a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+  }
 </style>
 <html>
   <head>
@@ -65,7 +79,7 @@
           <ul>
             <li><a href="#intro">Intro</a></li>
             <li><a href="#work">Purpose</a></li>
-            <!-- <li><a href="#about">About</a></li> -->
+            <li><a href="#about">Courses</a></li>
             <li><a href="#contact">Contact</a></li>
             <!-- <li><a href="#elements">Elements</a></li> -->
           </ul>
@@ -159,9 +173,20 @@
 
         <!-- About -->
         <article id="about">
-          <h2 class="major">About</h2>
-          <span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-          <p></p>
+          <h2 class="major" style="text-align: center">Courses</h2>
+          <div style="text-align: center">
+            <h3 class="secondhead">Fundamentals of Python</h3>
+            <p>
+              This course is intended for beginner level programmers and goes
+              over the absolute basics of Python.<br />
+              <i style="font-size: small"> No prior knowledge needed</i>
+            </p>
+            <form
+              action="https://docs.google.com/forms/d/1d7b2kQaSKx9v_R2otpe9H4ePUEGG2RrVyCHxozF2HnE/viewform?edit_requested=true&pli=1"
+            >
+              <input type="submit" value="Sign up for Fundamentals of Python" />
+            </form>
+          </div>
         </article>
 
         <!-- Contact -->
@@ -198,7 +223,7 @@
             <!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
             <li>
               <a
-                href="https://www.instagram.com"
+                href="https://www.instagram.com/901Coding"
                 class="icon brands fa-instagram"
                 ><span class="label">Instagram</span></a
               >
